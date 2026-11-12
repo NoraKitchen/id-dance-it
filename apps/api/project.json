@@ -40,7 +40,8 @@
             },
             "options": {
                 "buildTarget": "api:build",
-                "runBuildTargetDependencies": false
+                "runBuildTargetDependencies": true,
+                "watch": true
             },
             "configurations": {
                 "development": {

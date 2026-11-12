@@ -1,2 +1,22 @@
-<app-nx-welcome></app-nx-welcome>
+<main>
+    <h1>I'd Dance It</h1>
+    <p>Application under development.</p>
+</main>
+
+<!-- Temporary development controls. Delete this section with core/dev-auth. -->
+<section aria-labelledby="development-user-heading">
+    <h2 id="development-user-heading">Development User</h2>
+    <p>Selected: {{ selectedDevUserLabel() }}</p>
+    <div class="dev-user-actions">
+        <button type="button" (click)="selectAdmin()">Admin</button>
+        <button type="button" (click)="selectDancer()">Dancer</button>
+        <button type="button" (click)="clearSelectedDevUser()">
+            Logged Out
+        </button>
+        <button type="button" (click)="loadCurrentUser()">
+            Get Current User
+        </button>
+    </div>
+</section>
+
 <router-outlet></router-outlet>
